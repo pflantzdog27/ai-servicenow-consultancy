@@ -1,0 +1,17 @@
+fastapi
+uvicorn[standard]
+httpx
+python-multipart
+aiofiles
+
+# Authentication
+python-jose[cryptography]
+passlib[bcrypt]
+pyjwt
+
+# Database
+sqlalchemy
+alembic
+
+# Environment
+python-dotenv
