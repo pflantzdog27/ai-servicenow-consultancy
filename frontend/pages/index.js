@@ -64,10 +64,14 @@ export default function Dashboard() {
       `}</style>
       
       <header className="bg-white shadow">
-        <div className="max-w-7xl mx-auto px-4 py-6">
+        <div className="max-w-7xl mx-auto px-4 py-6 flex items-center justify-between">
           <h1 className="text-3xl font-bold text-gray-900">
             AI ServiceNow Consultancy
           </h1>
+          <nav className="space-x-4 text-sm">
+            <a href="/generate" className="text-blue-600 hover:underline">Generate Config</a>
+            <a href="/login" className="text-blue-600 hover:underline">Login</a>
+          </nav>
         </div>
       </header>
 
