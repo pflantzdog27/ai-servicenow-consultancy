@@ -14,7 +14,9 @@ pyjwt==2.8.0
 langchain==0.1.7
 langchain-openai==0.0.8
 langchain-community==0.0.20
-langchain-pinecone==0.2.8  
+langchain-pinecone==0.2.8
+openai>=1.0.0
+numpy>=1.24
 
 # Document processing
 pypdf2==3.0.1
