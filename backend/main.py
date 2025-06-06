@@ -4,7 +4,7 @@ from fastapi.staticfiles import StaticFiles
 from datetime import datetime
 import os
 
-from app.api import auth, documents, projects
+from app.api import auth, documents, projects, ai, workflows
 from app.models.database import Base, engine
 
 # Create FastAPI app
@@ -30,6 +30,8 @@ app.mount("/storage", StaticFiles(directory="storage"), name="storage")
 app.include_router(auth.router)
 app.include_router(documents.router)
 app.include_router(projects.router)
+app.include_router(ai.router)
+app.include_router(workflows.router)
 
 @app.get("/")
 async def root():
